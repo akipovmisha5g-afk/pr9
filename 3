@@ -1,0 +1,16 @@
+count = 0
+start_counting = False
+
+while True:
+    try:
+        name = input("Введите имя: ")  
+
+        if name == "Александра":
+            start_counting = True
+        elif name == "Левон":
+            print(count)
+            break
+        elif start_counting:
+            count += 1
+    except:
+        break
